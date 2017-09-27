@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node -- src/index.js"
+    "start": "nodemon --exec babel-node -- src/index.js",
+    "start:db": "mongod --fork --logpath /Users/Bard/mongodb/logs/mongodb.log"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -21,6 +22,10 @@
     "prettier": "^1.7.0"
   },
   "dependencies": {
-    "express": "^4.15.5"
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "jsonwebtoken": "^8.0.1",
+    "mongoose": "^4.11.13"
   }
 }
